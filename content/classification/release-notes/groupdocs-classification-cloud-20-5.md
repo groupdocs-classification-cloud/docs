@@ -14,7 +14,8 @@ keywords: ""
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-|#Key|#Summary|#Category
+|Key|Summary|Category
+|---|---|---
 |GDCLASS-58|Support of the Chinese language for Sentiment taxonomy|Feature
 
 ## Public API and Backward Incompatible Changes ##

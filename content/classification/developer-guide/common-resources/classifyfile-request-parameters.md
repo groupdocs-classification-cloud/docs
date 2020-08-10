@@ -8,7 +8,7 @@ description: ""
 keywords: ""
 ---
 
-|Parameter|In|Type|#Default value|Comment
+|Parameter|In|Type|Default value|Comment
 |---|---|---|---|---
 | |FormData|multipart/form-data| |File content.
 |BestClassesCount|url (Optional)|string ("1", "2", "3",..)|"1"|Count of the best classes to return.

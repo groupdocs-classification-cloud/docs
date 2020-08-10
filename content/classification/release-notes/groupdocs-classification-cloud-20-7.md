@@ -14,7 +14,8 @@ keywords: ""
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-|#Key|#Summary|#Category
+|Key|Summary|Category
+|---|---|---
 |GDCLASS-59|Integrate the fine-grained sentiment classification model for English and Chinese|Feature
 
 ## Public API and Backward Incompatible Changes ##

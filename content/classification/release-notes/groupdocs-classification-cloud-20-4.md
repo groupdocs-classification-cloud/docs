@@ -7,22 +7,17 @@ description: ""
 keywords: ""
 ---
 
-##   ##
-
 ## Major Features ##
 
 * Files can be classified from request content.
 * Sentiment Classification (Analysis) was added.
 
-##   ##
-
 ## Full List of Issues Covering all Changes in this Release ##
 
-|#Key|#Summary|#Category
+|Key|Summary|Category
+|---|---|---
 |GDCLASS-41|Classification with a file in content of post request.|Improvement
 |GDCLASS-52|Sentiment taxonomy was added.|Improvement
-
-##   ##
 
 ## Public API and Backward Incompatible Changes ##
 

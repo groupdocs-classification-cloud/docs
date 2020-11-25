@@ -3,13 +3,15 @@ id: "groupdocs-classification-cloud-20-11"
 url: "classification/groupdocs-classification-cloud-20-11"
 title: "GroupDocs.Classification Cloud 20.11"
 productName: "GroupDocs.Classification Cloud"
+weight: 1
 description: ""
 keywords: ""
 ---
 
 ## Major Features ##
 
-* Sentiment Classification probability model for English and Chinese was enhanced.
+* Batch text classification was added to API. Now up to 10 texts can be classified in one request.
+* Sentiment3 taxonomy (Negative/Neutral/Positive) is supported now.
 
 
 ## Full List of Issues Covering all Changes in this Release ##

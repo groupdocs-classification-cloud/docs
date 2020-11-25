@@ -3,6 +3,7 @@ id: "groupdocs-classification-cloud-20-7"
 url: "classification/groupdocs-classification-cloud-20-7"
 title: "GroupDocs.Classification Cloud 20.7"
 productName: "GroupDocs.Classification Cloud"
+weight: 2
 description: ""
 keywords: ""
 ---

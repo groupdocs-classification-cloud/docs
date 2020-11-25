@@ -23,7 +23,7 @@ See [Classify request parameters]({{< ref "classification/developer-guide/common
 
 This resource represents a controller for single call document classification.
 
-Classify document with taxonomy. Set taxonomy parameter to "default" for IAB-2 or set to "documents" for Documents taxonomy.
+Classify document with taxonomy. Set taxonomy parameter to "default" for IAB-2, set to "documents" for Documents taxonomy, or set to "sentiment" or "sentiment3" for Sentiments taxonomies.
 
 ## cURL REST Example for IAB-2 (default) taxonomy ##
 
@@ -117,6 +117,41 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCoun
 }
  ```
 
+
+## cURL REST Example for Sentiment3 taxonomy ##
+
+
+ Request
+
+```html 
+curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#3&taxonomy#sentiment3"
+-H "content-type: application/json"
+-X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
+ ```
+
+
+ Response
+
+```html 
+{
+  "bestClassName": "Positive",
+  "bestClassProbability":89.43,
+  "bestResults":[{
+    "className":"Positive",
+    "classProbability":89.43
+  },
+  {
+    "className":"Neutral",
+    "classProbability":7.15
+  },
+  {
+    "className":"Negative
+    "classProbability":3.42
+  }],
+  "Code":200,
+  "status":"OK"
+}
+ ```
 
 
 ## SDKs ##

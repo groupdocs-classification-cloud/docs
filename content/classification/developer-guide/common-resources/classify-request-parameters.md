@@ -12,7 +12,7 @@ keywords: ""
 |---|---|---|---
 | |body|BaseRequest|Document's description (string) and/or document's info.
 |BestClassesCount|url (Optional)|string ("1", "2", "3",..)|Count of the best classes to return.
-|Taxonomy|url (Optional)|string ("", "default", "iab2", "documents", "sentiment")|Taxonomy to use for classification return.
+|Taxonomy|url (Optional)|string ("", "default", "iab2", "documents", "sentiment", "sentiment3")|Taxonomy to use for classification return.
 |PrecisionRecallBalance|url (Optional)|string ("precision", "recall", "") |Balance between precision and recall.
 
 

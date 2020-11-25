@@ -76,3 +76,11 @@ Binary sentiment classification. Positive class probability can also be interpre
 
 1. Negative
 1. Positive
+
+## Setiment3 taxonomy ##
+
+3-classes sentiment classification.
+
+1. Negative
+1. Neutral
+1. Positive

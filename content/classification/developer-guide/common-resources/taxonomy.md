@@ -3,7 +3,7 @@ id: "taxonomy"
 url: "classification/taxonomy"
 title: "Taxonomy"
 productName: "GroupDocs.Classification Cloud"
-weight: 1
+weight: 4
 description: ""
 keywords: ""
 ---

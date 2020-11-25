@@ -3,7 +3,7 @@ id: "classifyfile-request-parameters"
 url: "classification/classifyfile-request-parameters"
 title: "classify/file Request Rarameters"
 productName: "GroupDocs.Classification Cloud"
-weight: 1
+weight: 2
 description: ""
 keywords: ""
 ---

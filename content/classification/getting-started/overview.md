@@ -15,17 +15,15 @@ GroupDocs.Classification Cloud is a REST API for classification documents.
 {{< alert style="info" >}}
 Our GroupDocs.Classification Cloud REST API comes with many features crucial to organizations, such as:
 
-* Classification of the raw texts
-* Classification of batches of raw texts
-* Classification of documents for next supported file formats
-** Portable Document Format: PDF
-** Microsoft Word: DOC, DOCX, DOCM, DOT, DOTX, DOTM
-** OpenDocument Formats: ODT, OTT
-** Rich Text Format: RTF
-** Plain Text File: TXT
-* Sentiment Analysis
-** Multilingual Sentiment Analysis with Sentiment and Sentiment3 taxonomies
-** English, Chinese, German and Spanish languages are supported
+* Classification of the raw texts.
+* Classification of batches of raw texts.
+* Classification of documents for next supported file formats:
+Portable Document Format: PDF;
+Microsoft Word: DOC, DOCX, DOCM, DOT, DOTX, DOTM;
+OpenDocument Formats: ODT, OTT;
+Rich Text Format: RTF;
+Plain Text File: TXT.
+* Multilingual Sentiment Analysis with Sentiment and Sentiment3 taxonomies. English, Chinese, German and Spanish languages are supported.
 {{< /alert >}}
 
 ## Security and Authentication ##

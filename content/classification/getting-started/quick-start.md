@@ -8,72 +8,45 @@ description: ""
 keywords: ""
 ---
 
-
-
-
-
-
 # Create an account #
 
-Creating an account is very simple. Go to [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) to create a free account.
+Creating an account is very simple. Go to [Dashboard](https://dashboard.groupdocs.cloud) to create a free account.\
+We're using Single Sign On across our websites, therefore, if you already have an account with our services, you can use it to also acccess the [Dashboard](https://dashboard.groupdocs.cloud).
 
 # Create an API client app #
 
-Before you can make any requests to GroupDocs for Cloud API you need to get APP SID and APP key (secret key). This will will be used to invoke GroupDocs for Cloud API.
-
-You can get it from default Application or create new Application from [My Apps tab of GroupDocs for Cloud Dashboard]({{< ref "total/getting-started/ui-topics/create-new-app-and-get-app-key-and-sid.md" >}})).
+Before you can make any requests to GroupDocs Cloud API you need to get a **Client Id** and a **Client Secret**.
+This will will be used to invoke GroupDocs Cloud API. You can get it by creating a new [Application](https://dashboard.groupdocs.cloud/applications).
 
 # Install the SDK of your choice #
 
-GroupDocs for Cloud SDK is written in different languages, all you need to get started is adding our [SDK ]({{< ref "classification/getting-started/available-sdks.md" >}})to your existing project. 
+GroupDocs Cloud SDK is written in different languages, all you need to get started is adding our [SDK ]({{< ref "classification/getting-started/available-sdks.md" >}})to your existing project. 
 
 # Make an API request from the SDK of your choice #
 
-Use the App SID and App key (secret key) from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using Formats API to get all supported file formats in GroupDocs.Classification Cloud.
+Use the **Client Id** and the **Client Secret** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using Formats API to get all supported file formats in GroupDocs.Classification Cloud.
 
 {{< alert style="info" >}}The GitHub repository for GroupDocs.Classification Cloud has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 
 
 
- C#
+{{< tabs tabTotal="1" tabID="10" tabName1="C#" >}} {{< tab tabNum="1" >}}
 
-```html 
-namespace GroupDocs.Classification.Cloud.Sdk.Examples
-{
-    using System;
-    using System.Diagnostics;
-    using GroupDocs.Classification.Cloud.Sdk.Api;
-    using GroupDocs.Classification.Cloud.Sdk.Model.Requests;
+```csharp
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            *TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud/ (free registration is required).
-            var configuration # new Configuration
-            {
-                AppSid # "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-                AppKey # "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-            };
+// For complete examples and data files, please go to https://github.com/groupdocs-classification-cloud/groupdocs-classification-cloud-dotnet-samples
+string ClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+string ClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-            var apiInstance # new ClassificationApi(configuration);
+var configuration = new Configuration(ClientId, ClientSecret);
 
-            try
-            {
-                var request # new GetSupportedFileFormatsRequest();
+var apiInstance = new InfoApi(configuration);
+var response = apiInstance.GetSupportedFileFormats();
 
-                * Get supported file formats results
-                var response # apiInstance.GetSupportedFileFormats(request);
-                Debug.Print(response.ToString());
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling ClassificationApi.Classify: " + e.Message);
-            }
-        }
-    }
-}
- ```
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 
 

@@ -23,7 +23,7 @@ keywords: ""
 ```javascript 
 
 BatchRequest {
-  Batch (string[]),
+  batch (string[]),
 }
 
  ```
@@ -36,7 +36,7 @@ JSON
 ```html 
 
 {
-  "Batch": ["Text1", "Text2"]
+  "batch": ["Text1", "Text2"]
 }
 
  ```
@@ -48,8 +48,8 @@ XML
 <?xml version#"1.0"?>
 
 <BatchRequest>
-  <Batch>Text1</Batch>
-  <Batch>Text1</Batch>
+  <batch>Text1</batch>
+  <batch>Text1</batch>
 </BatchRequest>
 
  ```

@@ -33,7 +33,7 @@ Classify document with taxonomy. Set taxonomy parameter to "default" for IAB-2, 
 ```html 
 curl -v "http://api.groupdocs.cloud/v1.0/classification/classify"
 -H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
+-X POST -d '{ "document": {"folder": "words/docx","name": "four-pages.docx" } }'
  ```
 
 
@@ -43,7 +43,10 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify"
 {
   "bestClassName": "Books_and_Literature",
   "bestClassProbability": 48.92,
-  "bestResults": [],
+  "bestResults":[{
+    "className":"Books_and_Literature",
+    "classProbability":48.92
+  }],
   "code": 200,
   "status": "OK"
 }
@@ -57,9 +60,9 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify"
  Request
 
 ```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#3&taxonomy#documents"
+curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount=3&taxonomy=documents"
 -H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
+-X POST -d '{ "document": {"folder": "words/docx","name": "four-pages.docx" } }'
  ```
 
 
@@ -96,9 +99,9 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCoun
  Request
 
 ```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#1&taxonomy#sentiment"
+curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount=1&taxonomy=sentiment"
 -H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
+-X POST -d '{ "document": {"folder": "words/docx","name": "four-pages.docx" } }'
  ```
 
 
@@ -124,9 +127,9 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCoun
  Request
 
 ```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#3&taxonomy#sentiment3"
+curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount=3&taxonomy=sentiment3"
 -H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
+-X POST -d '{ "document": {"folder": "words/docx","name": "four-pages.docx" } }'
  ```
 
 
@@ -184,8 +187,6 @@ The API is completely independent of your operating system, database system or d
 
 
 {{< gist i-mochalov ca4a706a028a4007f4ae14082f81ff90 ClassificationCSharpClassifyDocumentStream.cs >}}
-
-
 
 
 

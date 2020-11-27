@@ -31,7 +31,7 @@ Classify raw text with IAB-2 taxonomy.
  Request
 
 ```javascript 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#3"
+curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount=3"
 -H "content-type: application/json"
 -X POST -d '{ "Description" : "Medicine is an important part of our life" }'
  ```

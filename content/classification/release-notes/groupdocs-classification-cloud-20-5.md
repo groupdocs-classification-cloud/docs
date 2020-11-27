@@ -27,7 +27,7 @@ keywords: ""
 
 ```html 
 
-curl -X POST "https://api.groupdocs.cloud/v1.0/classification/classify?BestClassesCount#1&Taxonomy#sentiment" \
+curl -X POST "https://api.groupdocs.cloud/v1.0/classification/classify?BestClassesCount=1&Taxonomy=sentiment" \
 -H "accept: application/json" -H "Content-Type: application/json" \
 -d "{ \"description\": \"熟能生巧\"}" -H "Authorization: Bearer [Access_token]"
 

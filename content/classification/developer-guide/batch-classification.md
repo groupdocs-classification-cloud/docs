@@ -36,9 +36,9 @@ Classify up to 10 texts with one request. Set taxonomy parameter to "default" fo
  Request
 
 ```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify/batch?taxonomy#sentiment3"
+curl -v "http://api.groupdocs.cloud/v1.0/classification/classify/batch?taxonomy=sentiment3"
 -H "content-type: application/json"
--X POST -d '{ "Batch": ["Text1", "Text2"] }'
+-X POST -d '{ "batch": ["Text1", "Text2"] }'
  ```
 
 
@@ -49,14 +49,14 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify/batch?taxonomy#
   [{
       "bestClassName": "Neutral",
       "bestClassProbability": 90.02,
-      "bestResults": [],
+      "bestResults": [{"className":"Neutral","classProbability":90.02}],
       "code": 200,
       "status": "OK"
     },
     {
       "bestClassName": "Neutral",
       "bestClassProbability": 90.02,
-      "bestResults": [],
+      "bestResults": [{"className":"Neutral","classProbability":90.02}],
       "code": 200,
       "status": "OK"
   }]
@@ -65,114 +65,11 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify/batch?taxonomy#
 
 
 
-## cURL REST Example for "Documents" taxonomy ##
-
-
- Request
-
-```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#3&taxonomy#documents"
--H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
- ```
-
-
- Response
-
-```html 
-{
-  "bestClassName": "Other",
-  "bestClassProbability": 36.8,
-  "bestResults": [
-    {
-      "className": "Other",
-      "classProbability": 36.8
-    },
-    {
-      "className": "ADVE",
-      "classProbability": 14.72
-    },
-    {
-      "className": "News",
-      "classProbability": 12.77
-    }
-  ],
-  "code": 200,
-  "status": "OK"
-}
- ```
-
-
-
-## cURL REST Example for Sentiment taxonomy ##
-
-
- Request
-
-```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#1&taxonomy#sentiment"
--H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
- ```
-
-
- Response
-
-```html 
-{
-  "bestClassName": "Positive",
-  "bestClassProbability":90.02,
-  "bestResults":[{
-    "className":"Positive",
-    "classProbability":90.02
-  }],
-  "Code":200,
-  "status":"OK"
-}
- ```
-
-
-## cURL REST Example for Sentiment3 taxonomy ##
-
-
- Request
-
-```html 
-curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount#3&taxonomy#sentiment3"
--H "content-type: application/json"
--X POST -d '{ "Document": {"Folder": "words/docx","Name": "four-pages.docx" } }'
- ```
-
-
- Response
-
-```html 
-{
-  "bestClassName": "Positive",
-  "bestClassProbability":89.43,
-  "bestResults":[{
-    "className":"Positive",
-    "classProbability":89.43
-  },
-  {
-    "className":"Neutral",
-    "classProbability":7.15
-  },
-  {
-    "className":"Negative
-    "classProbability":3.42
-  }],
-  "Code":200,
-  "status":"OK"
-}
- ```
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-classification-cloud/)
 
-### Classify Document from Storage ###
+### Classify Batch of Texts ###
 
 
  C#
@@ -180,24 +77,11 @@ The API is completely independent of your operating system, database system or d
 
 
 
-{{< gist groupdocscloud adb54c76c82d414eeb066a86c8a9fc61 Classification_CSharp_Classify_Document_from_Storage.cs >}}
+{{< gist i-mochalov ca4a706a028a4007f4ae14082f81ff90 ClassificationCSharpCloudBatch.cs >}}
 
 
 
 
-
-
-###   ###
-
-### Classify Document from Stream ###
-
-
- C#
-
-
-
-
-{{< gist i-mochalov ca4a706a028a4007f4ae14082f81ff90 ClassificationCSharpClassifyDocumentStream.cs >}}
 
 
 

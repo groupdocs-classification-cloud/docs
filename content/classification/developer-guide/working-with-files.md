@@ -49,7 +49,7 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="1" tabID="9" tabName1="C#" >}} {{< tab tabNum="1" >}}
 
-{{< gist i-mochalov caf8bcd223759d65afaa07436f251820 Classification_CSharp_Download_File.cs >}}
+{{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Download_File.cs >}}
 
 {{< /tab >}} {{< /tabs >}}
 
@@ -106,7 +106,7 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="1" tabID="10" tabName1="C#" >}} {{< tab tabNum="1" >}}
 
-{{< gist i-mochalov caf8bcd223759d65afaa07436f251820 Classification_CSharp_Upload_File.cs >}}
+{{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Upload_File.cs >}}
 
 {{< /tab >}} {{< /tabs >}}
 
@@ -151,7 +151,7 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="1" tabID="11" tabName1="C#" >}} {{< tab tabNum="1" >}}
 
-{{< gist i-mochalov caf8bcd223759d65afaa07436f251820 Classification_CSharp_Delete_File.cs >}}
+{{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Delete_File.cs >}}
 
 {{< /tab >}} {{< /tabs >}}
 
@@ -198,7 +198,7 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="1" tabID="12" tabName1="C#" >}} {{< tab tabNum="1" >}}
 
-{{< gist i-mochalov caf8bcd223759d65afaa07436f251820 Classification_CSharp_Copy_File.cs >}}
+{{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Copy_File.cs >}}
 
 {{< /tab >}} {{< /tabs >}}
 
@@ -245,6 +245,6 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="1" tabID="13" tabName1="C#" >}} {{< tab tabNum="1" >}}
 
-{{< gist i-mochalov caf8bcd223759d65afaa07436f251820 Classification_CSharp_Move_File.cs >}}
+{{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Move_File.cs >}}
 
 {{< /tab >}} {{< /tabs >}}

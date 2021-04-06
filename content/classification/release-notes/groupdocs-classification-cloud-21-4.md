@@ -23,6 +23,4 @@ keywords: ""
 
 ## Public API and Backward Incompatible Changes ##
 
-### Classify batch of texts with the Sentiment taxonomy ###
-
 **There are a lot of changes because groupdocs storage API has been added to the product. Please take a look at the developer's guide**

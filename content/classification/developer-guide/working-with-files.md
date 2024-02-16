@@ -6,6 +6,7 @@ productName: "GroupDocs.Classification Cloud"
 weight: 6
 description: "GroupDocs.Classification Cloud Working With Files"
 keywords: "GroupDocs.Classification Cloud, Working With Files"
+toc: True
 ---
 
 ## Download File API
@@ -26,13 +27,13 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 
 ### Download File with cURL
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/file/one-page.docx?storageName#MyStorage" -H  "accept: multipart/form-data" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -47,7 +48,7 @@ curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/file/one-pa
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [File API](https://apireference.groupdocs.cloud/classification/#/) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="9" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Download_File.cs >}}
 
@@ -71,13 +72,13 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 ### Upload File with cURL
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example3">}} {{< tab "Request" >}}
 
 ```bash
 curl -X POST "https://api.groupdocs.cloud/v1.0/classification/storage/file/classificationdocs%2Fone-page2.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -104,7 +105,7 @@ curl -X POST "https://api.groupdocs.cloud/v1.0/classification/storage/file/class
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [File API](https://apireference.groupdocs.cloud/classification/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="10" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example4">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Upload_File.cs >}}
 
@@ -128,13 +129,13 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 
 ### Delete File with cURL
 
-{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example5">}} {{< tab "Request" >}}
 
 ```bash
 curl -X DELETE "https://api.groupdocs.cloud/v1.0/classification/storage/file/classificationdocs1%2Fone-page1.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -149,7 +150,7 @@ curl -X DELETE "https://api.groupdocs.cloud/v1.0/classification/storage/file/cla
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [File API](https://apireference.groupdocs.cloud/classification/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="11" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example6">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Delete_File.cs >}}
 
@@ -175,13 +176,13 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ### File Copy with cURL
 
-{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example7">}} {{< tab "Request" >}}
 
 ```bash
 curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/file/copy/classificationdocs%2Fone-page1.docx?destPath#classificationdocs1%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -196,7 +197,7 @@ curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/file/copy/c
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [File API](https://apireference.groupdocs.cloud/classification/#/File) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="12" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example8">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Copy_File.cs >}}
 
@@ -222,13 +223,13 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ### File Move with cURL
 
-{{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example9">}} {{< tab "Request" >}}
 
 ```bash
 curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/file/move/classificationdocs%2Fone-page1.docx?destPath#classificationdocs1%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -243,7 +244,7 @@ curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/file/move/c
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [File API](https://apireference.groupdocs.cloud/classification/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="13" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example10">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Move_File.cs >}}
 

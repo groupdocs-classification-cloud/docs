@@ -6,6 +6,7 @@ productName: "GroupDocs.Classification Cloud"
 weight: 1
 description: ""
 keywords: ""
+toc: True
 ---
 
 |Parameter|In|Type|Comment
@@ -16,9 +17,9 @@ keywords: ""
 |PrecisionRecallBalance|url (Optional)|string ("precision", "recall", "") |Balance between precision and recall.
 
 
-## BaseRequest ##
+## BaseRequest
 
-### Model: ###
+### Model:
 
 ```javascript 
 
@@ -32,15 +33,13 @@ FileInfo {
   password (string, optional)
 }
 
- ```
+```
 
-### Examples: ###
-
+### Examples:
 
 JSON
 
-```html 
-
+```json 
 {
   "description": "File description or raw text to classify if no document is specified",
   "document":
@@ -50,33 +49,18 @@ JSON
     "password" : "File password"
   }
 }
-
- ```
+```
 
 XML
 
 ```xml 
-
 <?xml version#"1.0"?>
-
 <BaseRequest>
-
-<description>File description or raw text to classify if no document is specified
-</description>
-
-<document>
- 
-<folder>File folder
-</folder>
- 
-<name>File name
-</name>
- 
-<password>File password
-</password>
-
-</document>
-
+  <description>File description or raw text to classify if no document is specified</description>
+  <document>
+    <folder>File folder</folder>
+    <name>File name</name>
+    <password>File password</password>
+  </document>
 </BaseRequest>
-
  ```

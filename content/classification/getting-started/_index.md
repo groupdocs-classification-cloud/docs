@@ -6,5 +6,6 @@ productName: "GroupDocs.Classification Cloud"
 weight: 1
 description: ""
 keywords: ""
+toc: True
 ---
 

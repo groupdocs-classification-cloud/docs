@@ -6,6 +6,7 @@ productName: "GroupDocs.Classification Cloud"
 weight: 7
 description: "GroupDocs.Classification Cloud Working With Folder"
 keywords: "GroupDocs.Classification Cloud, Working With Folder"
+toc: True
 ---
 
 ## List Files
@@ -25,13 +26,13 @@ This API allows you to get a list of all files of a specific folder from the 
 
 ### List Files with cURL
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/folder/classificationdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -54,7 +55,7 @@ curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/folder/clas
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-storage-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Folder API](https://apireference.groupdocs.cloud/classification/#/Folder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="10" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Get_Files_List.cs >}}
 
@@ -77,13 +78,13 @@ This API allows you to create a new Folder in the specified Cloud Storage. If yo
 
 ### Create New Folder with cURL
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example3">}} {{< tab "Request" >}}
 
 ```bash
 curl -X POST "https://api.groupdocs.cloud/v1.0/classification/storage/folder/classificationdocs3?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -98,7 +99,7 @@ curl -X POST "https://api.groupdocs.cloud/v1.0/classification/storage/folder/cla
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-storage-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Folder API](https://apireference.groupdocs.cloud/classification/#/Folder/) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="11" tabName1="C#">}} {{< tab tabNum="1" >}}
+{{< tabs "example3">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Create_Folder.cs >}}
 
@@ -121,13 +122,13 @@ This API allows you to delete a particular Folder in the specified Cloud Storage
 
 ### Delete Folder with cURL
 
-{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example4">}} {{< tab "Request" >}}
 
 ```bash
 curl -X DELETE "https://api.groupdocs.cloud/v1.0/classification/storage/folder/classificationdocs3?storageName#MyStorage&#x26;recursive#true" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -142,7 +143,7 @@ curl -X DELETE "https://api.groupdocs.cloud/v1.0/classification/storage/folder/c
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Delete Folder API](https://apireference.groupdocs.cloud/classification/#/Folder/DeleteFolder) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="12" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example5">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Delete_Folder.cs >}}
 
@@ -167,13 +168,13 @@ This API allows you to copy a Folder to another location in the GroupDocs Cloud 
 
 ### Copy Folder with cURL
 
-{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example6">}} {{< tab "Request" >}}
 
 ```bash
 curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/folder/copy/classificationdocs?destPath#classificationdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -188,7 +189,7 @@ curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/folder/copy
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Copy Folder API](https://apireference.groupdocs.cloud/classification/#/Folder/CopyFolder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="13" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example7">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Copy_Folder.cs >}}
 
@@ -213,13 +214,13 @@ This API allows you to move a Folder to another location in the GroupDocs Cloud 
 
 ### Move Folder with cURL
 
-{{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example9">}} {{< tab "Request" >}}
 
 ```bash
 curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/folder/move/classificationdocs?destPath#classificationdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -234,7 +235,7 @@ curl -X PUT "https://api.groupdocs.cloud/v1.0/classification/storage/folder/move
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Move Folder API](https://apireference.groupdocs.cloud/classification/#/Folder/MoveFolder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="14" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example9">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Move_Folder.cs >}}
 

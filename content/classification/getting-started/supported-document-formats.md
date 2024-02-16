@@ -8,8 +8,6 @@ description: ""
 keywords: ""
 ---
 
-# GroupDocs.Classification Cloud Supported Document Formats #
-
 GroupDocs.Classification Cloud API supports following document formats:
 
 |**Format Name**|**Extension**|Load|Save|Remarks

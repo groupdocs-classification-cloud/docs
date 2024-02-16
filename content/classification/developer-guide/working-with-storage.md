@@ -6,6 +6,7 @@ productName: "GroupDocs.Classification Cloud"
 weight: 6
 description: "GroupDocs.Classification Cloud Working With Storage"
 keywords: "GroupDocs.Classification Cloud, Working With Storage"
+toc: True
 ---
 
 ## Check Storage Exist API
@@ -24,13 +25,13 @@ This API intended for checking the existence of cloud storage with a given name 
 
 ### Check Storage Exist with cURL
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/MyStorage/exist" -H  "accept: application/json" -H  "authorization: Bearer  [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -44,7 +45,7 @@ curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/MyStorage/e
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Storage existence](https://apireference.groupdocs.cloud/classification/#/Storage/StorageExists) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="10" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Storage_Exist.cs >}}
 
@@ -68,13 +69,13 @@ This API intended for checking existence of file or folder in [GroupDocs Cloud S
 
 ### Check Storage Object Exist with cURL
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example3">}} {{< tab "Request" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/exist/classificationdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -89,7 +90,7 @@ curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/exist/class
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Storage Object existence](https://apireference.groupdocs.cloud/classification/#/Storage/ObjectExists) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="11" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example4">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Object_Exists.cs >}}
 
@@ -111,13 +112,13 @@ This API intended for getting total and used space of the[ GroupDocs Cloud Stora
 
 ### Storage Space Usage with cURL
 
-{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example5">}} {{< tab "Request" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/disc?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -132,7 +133,7 @@ curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/disc?storag
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [storage space usage API](https://apireference.groupdocs.cloud/classification/#/Storage/GetDiscUsage) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="12" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example6">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Get_Disc_Usage.cs >}}
 
@@ -155,13 +156,13 @@ This API intended for getting the list of file versions, stored in the [GroupDoc
 
 ### Storage File Versions with cURL
 
-{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example7">}} {{< tab "Request" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/version/one-page.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```json
 {
@@ -185,7 +186,7 @@ curl -X GET "https://api.groupdocs.cloud/v1.0/classification/storage/version/one
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-classification-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-classification-cloud), it hides the [Storage File Versions API](https://apireference.groupdocs.cloud/classification/#/Storage/GetFileVersions) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="1" tabID="13" tabName1="C#" >}} {{< tab tabNum="1" >}}
+{{< tabs "example8">}} {{< tab "C#" >}}
 
 {{< gist i-mochalov 89f9ec7c8582943597feaa95a5e3d1d3 Classification_CSharp_Get_File_Versions.cs >}}
 

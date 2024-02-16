@@ -6,21 +6,14 @@ productName: "GroupDocs.Classification Cloud"
 weight: 4
 description: ""
 keywords: ""
+toc: True
 ---
 
+[Taxonomy (general)](https://en.wikipedia.org/wiki/Taxonomy_(general)) is the practice and science of classification of things or concepts, including the principles that underlie such classification.In our case, this is a list of text categories. We support two taxonomies for now:
 
-
-
-
-
-# Taxonomy #
-
-[Taxonomy (general)](https://en.wikipedia.org/wiki/Taxonomy_(general)) is the practice and science of classification of things or concepts, including the principles that underlie such classification. In our case, this is a list of text categories. We support two taxonomies for now:
-
-## IAB-2 taxonomy ##
+## IAB-2 taxonomy
 
 IAB-2 taxonomy: [https://www.iab.com/guidelines/taxonomy/](https://www.iab.com/guidelines/taxonomy/).
-
 
 1. 'Automotive',
 1. 'Books_and_Literature',
@@ -52,9 +45,7 @@ IAB-2 taxonomy: [https://www.iab.com/guidelines/taxonomy/](https://www.iab.com/
 1. 'Travel',
 1. 'Video_Gaming'
 
-
-
-## Documents taxonomy ##
+## Documents taxonomy
 
 Documents taxonomy:
 
@@ -70,14 +61,14 @@ Documents taxonomy:
 1. Scientific - scientific papers.
 1. Other - the other classes of documents or cases where the classifier is not sure.
 
-## Setiment taxonomy ##
+## Setiment taxonomy
 
 Binary sentiment classification. Positive class probability can also be interpreted as the main result of classification. 
 
 1. Negative
 1. Positive
 
-## Setiment3 taxonomy ##
+## Setiment3 taxonomy
 
 3-classes sentiment classification.
 

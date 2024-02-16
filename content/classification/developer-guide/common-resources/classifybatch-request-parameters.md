@@ -6,6 +6,7 @@ productName: "GroupDocs.Classification Cloud"
 weight: 3
 description: ""
 keywords: ""
+toc: True
 ---
 
 |Parameter|In|Type|Comment
@@ -16,9 +17,9 @@ keywords: ""
 |PrecisionRecallBalance|url (Optional)|string ("precision", "recall", "") |Balance between precision and recall.
 
 
-## BaseRequest ##
+## BaseRequest
 
-### Model: ###
+### Model:
 
 ```javascript 
 
@@ -28,25 +29,22 @@ BatchRequest {
 
  ```
 
-### Examples: ###
+### Examples:
 
 
 JSON
 
-```html 
-
+```json 
 {
   "batch": ["Text1", "Text2"]
 }
-
- ```
+```
 
 XML
 
 ```xml 
 
 <?xml version#"1.0"?>
-
 <BatchRequest>
   <batch>Text1</batch>
   <batch>Text1</batch>

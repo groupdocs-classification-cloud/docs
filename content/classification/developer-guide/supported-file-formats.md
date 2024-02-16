@@ -6,14 +6,8 @@ productName: "GroupDocs.Classification Cloud"
 weight: 2
 description: ""
 keywords: ""
+toc: True
 ---
-
-
-
-
-
-
-# Introduction #
 
 GroupDocs.Classification Cloud REST API support to classify several documents formats such as:
 
@@ -23,27 +17,24 @@ Portable Document Format: PDF
 
 Documents: DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT, ODT, OTT
 
-## Resource ##
+## Resource
 
 The following GroupDocs.Classification Cloud REST API resource has been used in the Supported File Formats example.
 
-## cURL Rest Example ##
+## cURL Rest Example
 
+Request
 
- Request
-
-```html 
+```bash 
 curl -v "https://api.groupdocs.cloud/v1.0/classification/formats" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Acccess Token]
+```
 
- ```
+Response
 
-
- Response
-
-```html 
+```json 
 {
   "formats": [
     {
@@ -92,28 +83,14 @@ curl -v "https://api.groupdocs.cloud/v1.0/classification/formats" \
     }
   ]
 }
- ```
+```
 
-
-
-## SDKs ##
+## SDK example
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs for C# language in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-classification-cloud/).
 
-### Get a List of Supported File Formats ###
+### Get a List of Supported File Formats
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud adb54c76c82d414eeb066a86c8a9fc61 Classification_CSharp_Classify_Get_Supported_File_Formats.cs >}}
-
-
-
-
-
-
-###   ###

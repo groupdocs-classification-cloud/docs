@@ -6,38 +6,30 @@ productName: "GroupDocs.Classification Cloud"
 weight: 3
 description: ""
 keywords: ""
+toc: True
 ---
-
-
-
-
-
-
-# Classify raw text #
 
 This API retrieves raw text classification result for [IAB-2, Documents or Sentiment taxonomy]({{< ref "classification/developer-guide/common-resources/taxonomy.md" >}}). It returns an object that contains information about the best class and its probability and about probabilities of the other classes. For Sentiment taxonomy Chinese and English are supported with the language auto-detection.
 
 See [Classify request parameters]({{< ref "classification/developer-guide/common-resources/classify-request-parameters.md" >}}) for request's details.
 
-## Resource ##
+## Resource
 
 This resource represents a controller for single call text classification.
 
 Classify raw text with IAB-2 taxonomy.
 
-## cURL REST Example ##
+## cURL REST Example
 
-
- Request
+Request
 
 ```javascript 
 curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCount=3"
 -H "content-type: application/json"
 -X POST -d '{ "Description" : "Medicine is an important part of our life" }'
- ```
+```
 
-
- Response
+Response
 
 ```javascript 
 {
@@ -60,24 +52,14 @@ curl -v "http://api.groupdocs.cloud/v1.0/classification/classify?bestClassesCoun
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
-
-
-## SDKs ##
+## SDK example
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-classification-cloud/)
 
-### Classify raw text ###
+### Classify raw text
 
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud adb54c76c82d414eeb066a86c8a9fc61 Classification_CSharp_Classify_Raw_Text.cs >}}
-
-
-
-
